@@ -1,10 +1,16 @@
-import { Button } from "ui";
+import { Button } from 'ui'
 
 export default function Web() {
   return (
     <div>
-      <h1>Web</h1>
-      <Button />
+      <Button variant='primary'>Primary</Button>
+      <Button variant='primary' size='small'>
+        Primary
+      </Button>
+      <Button variant='secondary'>Secondary</Button>
+      <Button variant='secondary' disabled>
+        Secondary
+      </Button>
     </div>
-  );
+  )
 }

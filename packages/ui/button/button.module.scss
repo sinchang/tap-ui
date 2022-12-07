@@ -1,0 +1,44 @@
+.default {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  &:disabled {
+    border: 1px solid #ccc;
+    background-color: #ccc;
+    color: #fff;
+    cursor: not-allowed;
+  }
+}
+
+.large {
+  padding: 11px 15px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.small {
+  padding: 5px 15px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.primary {
+  composes: default;
+  background-color: #458500;
+  border: 1px solid #458500;
+  &:hover {
+    background-color: #386B00;
+  }
+}
+
+.secondary {
+  composes: default;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #333;
+}
