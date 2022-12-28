@@ -1,3 +1,5 @@
+@import "../colors.scss";
+
 .default {
   display: flex;
   flex-direction: row;
@@ -29,8 +31,8 @@
 
 .primary {
   composes: default;
-  background-color: #458500;
-  border: 1px solid #458500;
+  background-color: $brand-primary;
+  border: 1px solid $brand-primary;
   &:hover {
     background-color: #386B00;
   }
