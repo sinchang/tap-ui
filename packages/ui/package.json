@@ -6,29 +6,33 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint *.ts*",
+    "test": "vitest",
     "dev": "storybook dev -p 6006",
     "build": "storybook build"
   },
   "devDependencies": {
-    "@storybook/addon-essentials": "^7.0.0-beta.15",
-    "@storybook/addon-interactions": "^7.0.0-beta.15",
-    "@storybook/addon-links": "^7.0.0-beta.15",
-    "@storybook/blocks": "^7.0.0-beta.15",
-    "@storybook/builder-vite": "7.0.0-beta.15",
-    "@storybook/react": "^7.0.0-beta.15",
-    "@storybook/react-vite": "7.0.0-beta.15",
+    "@storybook/addon-docs": "7.0.0-rc.1",
+    "@storybook/addon-essentials": "7.0.0-rc.1",
+    "@storybook/addon-interactions": "7.0.0-rc.1",
+    "@storybook/addon-links": "7.0.0-rc.1",
+    "@storybook/blocks": "7.0.0-rc.1",
+    "@storybook/builder-vite": "7.0.0-rc.1",
+    "@storybook/react": "7.0.0-rc.1",
+    "@storybook/react-vite": "7.0.0-rc.1",
     "@storybook/testing-library": "^0.0.13",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "eslint": "^7.32.0",
     "eslint-config-custom": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "storybook": "^7.0.0-beta.15",
+    "storybook": "7.0.0-rc.1",
     "tsconfig": "workspace:*",
     "typescript": "^4.9.4",
     "typescript-plugin-css-modules": "^4.1.1",
-    "vite": "^4.0.3"
+    "vite": "^4.1.4"
   },
   "dependencies": {
     "classnames": "^2.3.2"

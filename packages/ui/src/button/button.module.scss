@@ -1,46 +1,198 @@
-@import "../colors.scss";
+@import "../variable.css";
 
 .default {
-  display: flex;
-  flex-direction: row;
+  display: inline-flex;
+  flex-shrink: 0;
   justify-content: center;
   align-items: center;
-  border-radius: 8px;
+  border-radius: 4px;
   color: #fff;
   cursor: pointer;
-  font-weight: 700;
+  font-weight: 500;
+  box-sizing: border-box;
+  padding: 0;
   &:disabled {
-    border: 1px solid #ccc;
-    background-color: #ccc;
     color: #fff;
     cursor: not-allowed;
   }
 }
 
 .large {
-  padding: 11px 15px;
+  height: 40px;
   font-size: 16px;
   line-height: 24px;
+  padding: 0 8px;
+  min-width: 90px;
+}
+
+.medium {
+  height: 36px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 8px;
+  min-width: 82px;
 }
 
 .small {
-  padding: 5px 15px;
-  font-size: 14px;
-  line-height: 20px;
+ height: 24px;
+  font-size: 12px;
+  line-height: 18px;
+  min-width: 54px;
+  padding: 0 4px;
 }
 
 .primary {
   composes: default;
-  background-color: $brand-primary;
-  border: 1px solid $brand-primary;
+  border: none;
+  background-color: var(--tap-color-primary-600);
+  &.danger {
+    color: var(--tap-color-white);
+  }
   &:hover {
-    background-color: #386B00;
+    background-color: var(--tap-color-primary-500);
+    &.danger {
+      color: var(--tap-color-white);
+    }
+  }
+  &:active {
+    background-color: var(--tap-color-primary-700);
+    &.danger {
+      color: var(--tap-color-white);
+    }
+  }
+  &:disabled {
+    background-color: var(--tap-color-primary-300);
+    &.danger {
+      color: var(--tap-color-white);
+    }
   }
 }
 
-.secondary {
+.outline {
   composes: default;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  color: #333;
+  background-color: var(--tap-color-white);
+  border: 1px solid var(--tap-color-neutral-300);
+  color: var(--tap-color-neutral-600);
+
+  &.danger {
+    background-color: var(--tap-color-white);
+  }
+
+  &:hover {
+    border-color: var(--tap-color-primary-500);
+    background-color: var(--tap-color-white);
+    color: var(--tap-color-primary-500);
+    &.danger {
+      background-color: var(--tap-color-white);
+    }
+  }
+
+  &:active {
+    border-color: var(--tap-color-primary-700);
+    background-color: var(--tap-color-white);
+    color: var(--tap-color-primary-700);
+    &.danger {
+      background-color: var(--tap-color-white);
+    }
+  }
+
+  &:disabled {
+    border-color: var(--tap-color-neutral-200);
+    background-color: var(--tap-color-white);
+    color: var(--tap-color-neutral-400);
+    &.danger {
+      background-color: var(--tap-color-white);
+    }
+  }
+}
+
+.danger {
+  background-color: var(--tap-color-danger-600);
+  border-color: var(--tap-color-danger-600);
+  color: var(--tap-color-danger-600);
+
+  &:hover {
+    background-color: var(--tap-color-danger-500);
+    border-color: var(--tap-color-danger-500);
+    color: var(--tap-color-danger-500);
+  }
+
+  &:active {
+    background-color: var(--tap-color-danger-700);
+    border-color: var(--tap-color-danger-700);
+    color: var(--tap-color-danger-700);
+  }
+
+  &:disabled {
+    background-color: var(--tap-color-danger-300);
+    border-color: var(--tap-color-danger-300);
+    color: var(--tap-color-danger-300);
+  }
+}
+
+.ghost {
+  composes: default;
+  background-color: transparent;
+  color: var(--tap-color-neutral-600);
+  border: none;
+
+  &.danger {
+    color: var(--tap-color-danger-600);
+  }
+
+  &:hover {
+    background-color: var(--tap-color-neutral-100);
+    &.danger {
+      background-color: var(--tap-color-danger-100);
+    }
+  }
+
+  &:active {
+    background-color: var(--tap-color-neutral-300);
+    background-color: var(--tap-color-danger-300);
+  }
+
+  &:disabled {
+    color: var(--tap-color-neutral-400);
+    &.danger {
+      color: var(--tap-color-danger-400);
+    }
+  }
+}
+
+.link {
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--tap-color-primary-600);
+  min-width: auto;
+  background-color: transparent;
+  border: none;
+  height: fit-content;
+  padding: 0;
+
+  &.danger {
+    color: var(--tap-color-danger-600);
+    background-color: transparent;
+  }
+
+  &:hover {
+    color: var(--tap-color-primary-500);
+    &.danger {
+      color: var(--tap-color-danger-500);
+    }
+  }
+
+  &:active {
+    color: var(--tap-color-primary-700);
+    &.danger {
+      color: var(--tap-color-danger-700);
+    }
+  }
+
+  &:disabled {
+    color: var(--tap-color-primary-300);
+    &.danger {
+      color: var(--tap-color-danger-300);
+    }
+  }
 }
