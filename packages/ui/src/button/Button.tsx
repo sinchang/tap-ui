@@ -3,8 +3,9 @@ import classNames from 'classnames'
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'secondary'
-  size?: 'large' | 'small'
+  variant?: 'primary' | 'outline' | 'ghost' | 'link'
+  size?: 'large' | 'medium' | 'small'
+  danger?: boolean
 }
 
 export const Button = ({
@@ -12,9 +13,11 @@ export const Button = ({
   size = 'large',
   children,
   className,
+  danger = false,
   ...props
 }: ButtonProps) => {
   const btnClass = classNames(className, {
+    [styles.danger]: danger,
     [styles[variant]]: true,
     [styles[size]]: true,
   })
