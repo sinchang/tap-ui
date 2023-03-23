@@ -38,6 +38,7 @@ importers:
 
   packages/ui:
     specifiers:
+      '@radix-ui/react-icons': ^1.3.0
       '@storybook/addon-docs': 7.0.0-rc.1
       '@storybook/addon-essentials': 7.0.0-rc.1
       '@storybook/addon-interactions': 7.0.0-rc.1
@@ -64,6 +65,7 @@ importers:
     dependencies:
       classnames: 2.3.2
     devDependencies:
+      '@radix-ui/react-icons': 1.3.0_react@18.2.0
       '@storybook/addon-docs': 7.0.0-rc.1_biqbaboplfbrettd7655fr4n2y
       '@storybook/addon-essentials': 7.0.0-rc.1_biqbaboplfbrettd7655fr4n2y
       '@storybook/addon-interactions': 7.0.0-rc.1_biqbaboplfbrettd7655fr4n2y
@@ -3022,6 +3024,14 @@ packages:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.13.0
 
+  /@radix-ui/react-icons/1.3.0_react@18.2.0:
+    resolution: {integrity: sha512-jQxj/0LKgp+j9BiTXz3O3sgs26RNet2iLWmsPyRz2SIcR4q/4SbazXfnYwbAr+vLYKSfc7qxzyGQA1HLlYiuNw==}
+    peerDependencies:
+      react: ^16.x || ^17.x || ^18.x
+    dependencies:
+      react: 18.2.0
+    dev: true
+
   /@rollup/pluginutils/4.2.1:
     resolution: {integrity: sha512-iKnFXr7NkdZAIHiIWE+BX5ULi/ucVFYWD6TbAV+rZctiRTY2PL6tsIKhoIOaoskiWAkgu+VsbXgUVDNLHf+InQ==}
     engines: {node: '>= 8.0.0'}
@@ -3146,7 +3156,7 @@ packages:
       '@storybook/csf-plugin': 7.0.0-rc.1
       '@storybook/csf-tools': 7.0.0-rc.1
       '@storybook/global': 5.0.0
-      '@storybook/mdx2-csf': 1.0.0-next.5
+      '@storybook/mdx2-csf': 1.0.0-next.6
       '@storybook/node-logger': 7.0.0-rc.1
       '@storybook/postinstall': 7.0.0-rc.1
       '@storybook/preview-api': 7.0.0-rc.1
@@ -3471,7 +3481,7 @@ packages:
       '@storybook/client-logger': 7.0.0-rc.1
       '@storybook/core-common': 7.0.0-rc.1
       '@storybook/csf-plugin': 7.0.0-rc.1
-      '@storybook/mdx2-csf': 1.0.0-next.5
+      '@storybook/mdx2-csf': 1.0.0-next.6
       '@storybook/node-logger': 7.0.0-rc.1
       '@storybook/preview': 7.0.0-rc.1
       '@storybook/preview-api': 7.0.0-rc.1
@@ -3831,8 +3841,8 @@ packages:
     resolution: {integrity: sha512-8mchcpaDBZJKMoCfb2+IF6/waOQLR/7Xeish3ff8TAGTE9tD2s+S3s/z3lCiEXnBiYeW1ZEUlK3F2NTNdHfH2Q==}
     dev: true
 
-  /@storybook/mdx2-csf/1.0.0-next.5:
-    resolution: {integrity: sha512-02w0sgGZaK1agT050yCVhJ+o4rLHANWvLKWjQjeAsYbjneLC5ITt+3GDB4jRiWwJboZ8dHW1fGSK1Vg5fA34aQ==}
+  /@storybook/mdx2-csf/1.0.0-next.6:
+    resolution: {integrity: sha512-m6plojocU/rmrqWd26yvm8D+oHZPZ6PtSSFmZIgpNDEPVmc8s4fBD6LXOAB5MiPI5f8KLUr2HVhOMZ97o5pDTw==}
     dev: true
 
   /@storybook/node-logger/7.0.0-rc.1:
