@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
+import { PlusIcon } from '@radix-ui/react-icons'
 
 import { Button, type ButtonProps } from './Button'
 
@@ -93,4 +94,41 @@ export const Disabled = () => (
       Link
     </Button>
   </div>
+)
+
+export const Icon = () => (
+  <>
+    <div
+      style={{ display: 'flex', gap: 16, padding: 32, alignItems: 'center' }}
+    >
+      <Button variant='primary' leftIcon={<PlusIcon width={16} height={16} />}>
+        Primary
+      </Button>
+      <Button variant='outline' leftIcon={<PlusIcon width={16} height={16} />}>
+        Outline
+      </Button>
+      <Button variant='ghost' leftIcon={<PlusIcon width={16} height={16} />}>
+        Ghost
+      </Button>
+      <Button variant='link' leftIcon={<PlusIcon width={16} height={16} />}>
+        Link
+      </Button>
+    </div>
+    <div
+      style={{ display: 'flex', gap: 16, padding: 32, alignItems: 'center' }}
+    >
+      <Button variant='primary' rightIcon={<PlusIcon width={16} height={16} />}>
+        Primary
+      </Button>
+      <Button variant='outline' rightIcon={<PlusIcon width={16} height={16} />}>
+        Outline
+      </Button>
+      <Button variant='ghost' rightIcon={<PlusIcon width={16} height={16} />}>
+        Ghost
+      </Button>
+      <Button variant='link' rightIcon={<PlusIcon width={16} height={16} />}>
+        Link
+      </Button>
+    </div>
+  </>
 )
